@@ -36,11 +36,19 @@ $(document).ready(function() {
 
 /** google_map js **/
 function myMap() {
+    var location = new google.maps.LatLng(-25.320549767488423, -57.60449949103955);
     var mapProp = {
-        center: new google.maps.LatLng(-25.320666512141184, -57.60451898800992),
+        center: location,
         zoom: 18,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+    
+    // Añadir marcador en la ubicación
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: 'Iglesia Evangélica Bautista Panambi Retá'
+    });
 }
 
 // client section owl carousel
