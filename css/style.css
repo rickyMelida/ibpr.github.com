@@ -114,6 +114,17 @@ a:focus {
   height: 100%;
 }
 
+.bg-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .bg-box img {
   width: 100%;
   height: 100%;
@@ -133,6 +144,17 @@ a:focus {
   height: 100%;
 }
 
+.sub_page .hero_area .bg-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .sub_page .hero_area .bg-box img {
   width: 100%;
   height: 100%;
@@ -144,6 +166,8 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header_section .container-fluid {
@@ -159,6 +183,7 @@ a:focus {
   font-weight: bold;
   font-size: 32px;
   color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .custom_nav-container {
@@ -177,6 +202,7 @@ a:focus {
   border-radius: 5px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -327,6 +353,7 @@ a:focus {
           align-items: center;
   position: relative;
   padding: 45px 0 75px 0;
+  z-index: 2;
 }
 
 .slider_section .row {
@@ -343,16 +370,22 @@ a:focus {
 .slider_section .detail-box {
   color: #ffffff;
   margin-bottom: 145px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .slider_section .detail-box h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 }
 
 .slider_section .detail-box p {
   font-size: 14px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .slider_section .detail-box a {
